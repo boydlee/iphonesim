@@ -194,7 +194,9 @@
 					"-framework",
 					iPhoneSimulatorRemoteClient,
 					"-Wl,-rpath",
-					"-Wl,/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks",
+					"-Wl,$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks",
+					"-Wl,-rpath",
+					"-Wl,$(DEVELOPER_DIR)/../OtherFrameworks",
 				);
 				PREBINDING = NO;
 				SDKROOT = macosx10.6;
@@ -219,7 +221,9 @@
 					"-framework",
 					iPhoneSimulatorRemoteClient,
 					"-Wl,-rpath",
-					"-Wl,/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks",
+					"-Wl,$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks",
+					"-Wl,-rpath",
+					"-Wl,$(DEVELOPER_DIR)/../OtherFrameworks",
 				);
 				PREBINDING = NO;
 				SDKROOT = macosx10.6;
